@@ -28,16 +28,17 @@ project "PhysicsEngine"
 
     includedirs
     {
-        "PhysicsEngine/libraries/glm",
-        "PhysicsEngine/libraries/glad/include",
-        "PhysicsEngine/libraries/GLFW/include",
-        "PhysicsEngine/libraries/glm",
-        "PhysicsEngine/libraries/stb"
+        "%{prj.name}/libraries/glm",
+        "%{prj.name}/libraries/glad/include",
+        "%{prj.name}/libraries/GLFW/include",
+        "%{prj.name}/libraries/glm",
+        "%{prj.name}/libraries/stb",
+        "%{prj.name}/src"
     }
 
     libdirs
     {
-        "PhysicsEngine/libraries/GLFW/lib"
+        "%{prj.name}/libraries/GLFW/lib"
     }
 
     links
