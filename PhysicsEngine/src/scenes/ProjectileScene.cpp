@@ -2,7 +2,7 @@
 
 ProjectileScene::ProjectileScene()
 {
-	m_entity = new Entity("res/pic.png", glm::vec3(200, 400, 0), 0.f, glm::vec2(200, 550));
+	m_entity = new Entity("res/Ball.png", glm::vec3(50, 150, 0), 0.f, glm::vec2(50, 50));
 	m_renderer = new MasterRenderer();
 }
 
@@ -14,7 +14,13 @@ void ProjectileScene::Render()
 	m_renderer->Render();
 }
 
-void ProjectileScene::Update(float dt) {}
+void ProjectileScene::Update(float dt)
+{
+	velocity.y += acceleration.y * dt;
+
+	m_entity->Position.y += velocity.y * dt;
+	m_entity->Position.x += velocity.x * dt;
+}
 
 void ProjectileScene::CleanUp()
 {
