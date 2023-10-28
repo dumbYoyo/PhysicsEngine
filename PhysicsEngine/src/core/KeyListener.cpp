@@ -25,7 +25,7 @@ void KeyListener::KeyCallback(GLFWwindow* window, int key, int scancode, int act
 	}
 }
 
-void KeyListener::EndFrame()
+void KeyListener::EndFrameImgui()
 {
 	for (int i = 0; i < sizeof(Get()->m_keyClicked) / sizeof(bool); i++)
 	{

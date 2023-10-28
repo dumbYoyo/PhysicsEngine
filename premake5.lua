@@ -23,7 +23,8 @@ project "PhysicsEngine"
         "%{prj.name}/src/**.cpp",
         "%{prj.name}/src/**.h",
         "%{prj.name}/libraries/glad/src/glad.c",
-        "%{prj.name}/libraries/stb/stb/stb_image.cpp"
+        "%{prj.name}/libraries/stb/stb/stb_image.cpp",
+        "%{prj.name}/libraries/imgui/**.cpp",
     }
 
     includedirs
@@ -33,7 +34,8 @@ project "PhysicsEngine"
         "%{prj.name}/libraries/GLFW/include",
         "%{prj.name}/libraries/glm",
         "%{prj.name}/libraries/stb",
-        "%{prj.name}/src"
+        "%{prj.name}/libraries/imgui",
+        "%{prj.name}/src",
     }
 
     libdirs

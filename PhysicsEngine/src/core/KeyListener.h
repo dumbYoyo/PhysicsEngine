@@ -9,7 +9,7 @@ public:
 
 	static KeyListener* Get();
 	static void KeyCallback(GLFWwindow* window, int key, int scancode, int action, int mods);
-	static void EndFrame();
+	static void EndFrameImgui();
 	static bool GetKeyPressed(int key);
 	static bool GetKeyClicked(int key);
 

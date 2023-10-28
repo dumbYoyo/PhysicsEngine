@@ -1,5 +1,6 @@
 #include "scenes/Scene.h"
 #include "scenes/ProjectileScene.h"
+#include "scenes/RigidbodyScene.h"
 
 int main()
 {

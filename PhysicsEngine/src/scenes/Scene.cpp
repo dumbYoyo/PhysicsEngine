@@ -31,8 +31,8 @@ void Scene::Run()
 
 		Render();
 
-		KeyListener::EndFrame();
-		MouseListener::EndFrame();
+		KeyListener::EndFrameImgui();
+		MouseListener::EndFrameImgui();
 
 		glfwSwapBuffers(m_window);
 		glfwPollEvents();

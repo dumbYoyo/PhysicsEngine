@@ -47,7 +47,7 @@ void MouseListener::MouseScrollCallback(GLFWwindow* window, double xOffset, doub
 	Get()->m_scrollY = (float)yOffset;
 }
 
-void MouseListener::EndFrame()
+void MouseListener::EndFrameImgui()
 {
 	Get()->m_scrollX = 0;
 	Get()->m_scrollY = 0;

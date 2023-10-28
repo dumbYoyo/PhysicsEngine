@@ -10,8 +10,8 @@ public:
 
 	void Run();
 private:
-	GLFWwindow* m_window;
-
 	virtual void Update(float dt) = 0;
 	virtual void Render() = 0;
+protected:
+	GLFWwindow* m_window;
 };
